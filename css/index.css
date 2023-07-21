@@ -1,0 +1,83 @@
+@import url(./reset.css);
+/* 변수 */
+:root{
+--w-size:1473px;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header > nav{}
+header > nav > a{
+    padding: 50px 120px;
+    display: inline-block;
+    font-size: 1.2rem;
+
+}
+
+header > h1{}
+header > h1 > a{}
+
+main{}
+.visual{
+    height: 350px;
+    background: url('../img/img-Rectangle.jpg') 0 0 /cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visual > h2{
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.menu{
+    /* width: 1473px;  */
+    width:var(--w-size);
+    margin: 150px auto;
+    text-align: center;
+}
+.menu > h3{
+    font-size: 1.7rem;
+}
+.menu > h3::after{
+    content:'';
+    width: 100px;
+    border: 1px solid black;
+    display: block;
+    margin: 20px auto;
+}
+.menu > p{}
+.menu > ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.menu > ul > li{
+    width: 300px;
+}
+.menu > ul > li >figure{}
+/* 이미지사이즈는 항상 100%를 넣어준다. */
+.menu > ul > li >figure  img{
+    width: 100%;
+   
+}
+.menu > ul > li >figure  figcaption{
+    margin-top: 40px;
+}
+.menu > ul > li > figure p {
+    height: 300px;
+    overflow: hidden;}
+
+
+    .menu > ul > li >figure:hover  img{
+        width: 150%;
+        transition: 0.5s;
+       
+    }

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+html{font-size: 16px;}
+/* vw를 사용하면 창을 줄이면 글자도 같이줄어들게된다.(퍼센트값) */
+body{margin: 0; font-family: 'Inter', sans-serif;}
+
+h1,h2,h3,p,figure{margin: 0;}
+ul,li{margin: 0; padding: 0; list-style: none;}
+img{ vertical-align: middle;}
+a{text-decoration: none; color: #000;}
+
+/* 별표는 모든 태그를 지칭한다. */
+*{box-sizing: border-box;}
